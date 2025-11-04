@@ -20,7 +20,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí irá la lógica de autenticación
+    // Aquí va a ir la lógica de autenticación - pendiente
     console.log('Login data:', formData);
     navigate('/dashboard');
   };

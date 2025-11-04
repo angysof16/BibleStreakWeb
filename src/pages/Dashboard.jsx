@@ -1,6 +1,7 @@
 // src/pages/Dashboard.jsx
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
+import Navbar from '../components/Navbar';
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -10,7 +11,8 @@ const Dashboard = () => {
       background: 'linear-gradient(180deg, #001937 0%, #000C1A 100%)',
       minHeight: '100vh',
       color: '#FFFFFF',
-      fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      paddingBottom: '80px'
     }}>
       <div style={{
         minHeight: '100vh',
@@ -69,7 +71,7 @@ const Dashboard = () => {
               </p>
             </div>
 
-            <Button onClick={() => alert('Próximamente: Registro de lectura')}>
+            <Button onClick={() => navigate('/anadir-lectura')}>
               Continuar leyendo
             </Button>
 
@@ -110,24 +112,10 @@ const Dashboard = () => {
               </p>
             </div>
           </div>
-
-          <div style={{ textAlign: 'center' }}>
-            <button
-              onClick={() => navigate('/')}
-              style={{
-                background: 'transparent',
-                border: 'none',
-                color: '#368EF0',
-                cursor: 'pointer',
-                fontSize: '14px',
-                textDecoration: 'underline'
-              }}
-            >
-              Volver al inicio
-            </button>
-          </div>
         </div>
       </div>
+
+      <Navbar />
     </div>
   );
 };

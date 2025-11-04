@@ -24,7 +24,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí irá la lógica de registro
+    // Aquí va a ir la lógica de registro
     console.log('Register data:', formData);
     navigate('/pregunta-avance');
   };

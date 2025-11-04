@@ -14,6 +14,7 @@ const RegistroAvance = () => {
     capituloFin: 1
   });
 
+  {/* Pendiente agregar el resto aqui o en backend */}
   const libros = [
     { id: 1, nombre: 'Génesis', capitulos: 50 },
     { id: 2, nombre: 'Éxodo', capitulos: 40 },

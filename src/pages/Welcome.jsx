@@ -11,6 +11,7 @@ const Welcome = () => {
       minHeight: '100vh',
       color: '#FFFFFF',
       fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      
     }}>
       <div style={{
         height: '100vh',
