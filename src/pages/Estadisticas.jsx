@@ -1,5 +1,5 @@
 // src/pages/Estadisticas.jsx
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavBar";
 import {
   Chart as ChartJS,
   CategoryScale,
