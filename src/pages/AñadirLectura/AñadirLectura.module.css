@@ -1,0 +1,86 @@
+/* src/pages/AñadirLectura/AñadirLectura.module.css */
+
+.container {
+  background: var(--gradient-background);
+  min-height: 100vh;
+  color: var(--color-text-primary);
+  padding-bottom: var(--navbar-height);
+}
+
+.content {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: var(--font-size-base);
+  color: var(--color-text-tertiary);
+}
+
+.select,
+.input {
+  width: 100%;
+  padding: 12px;
+  background: var(--color-background-medium);
+  border: var(--border-primary);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-md);
+  font-family: var(--font-family);
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.select {
+  cursor: pointer;
+}
+
+.select:focus,
+.input:focus {
+  box-shadow: 0 0 0 2px rgba(54, 142, 240, 0.3);
+}
+
+.inputRow {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.inputSmall {
+  flex: 1;
+  text-align: center;
+}
+
+.separator {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-base);
+}

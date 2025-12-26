@@ -1,0 +1,22 @@
+/* src/components/Input/Input.module.css */
+
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px rgba(54, 142, 240, 0.3);
+}
+
+.input::placeholder {
+  color: var(--color-text-tertiary);
+}

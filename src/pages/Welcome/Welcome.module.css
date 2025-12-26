@@ -1,0 +1,100 @@
+/* src/pages/Welcome/Welcome.module.css */
+
+.container {
+  background: var(--gradient-background);
+  min-height: 100vh;
+  color: var(--color-text-primary);
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.glowEffect {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(13, 65, 120, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -200px;
+  right: -200px;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.logoContainer {
+  width: 100px;
+  height: 100px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  animation: float 3s ease-in-out infinite;
+  z-index: 10;
+}
+
+.logo {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: clamp(32px, 8vw, 64px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  z-index: 10;
+}
+
+.subtitle {
+  font-size: clamp(18px, 4vw, 24px);
+  margin-bottom: 1rem;
+  color: var(--color-text-secondary);
+  z-index: 10;
+}
+
+.highlight {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.description {
+  font-size: clamp(14px, 3vw, 18px);
+  color: var(--color-text-tertiary);
+  margin-bottom: 3rem;
+  z-index: 10;
+}
+
+.continueButton {
+  width: 70px;
+  height: 70px;
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-primary);
+  z-index: 10;
+}
+
+.continueButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(54, 142, 240, 0.7);
+}
+
+.continueButton:active {
+  transform: scale(0.95);
+}

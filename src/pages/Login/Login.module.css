@@ -1,0 +1,94 @@
+/* src/pages/Login/Login.module.css */
+
+.container {
+  background: var(--gradient-background);
+  min-height: 100vh;
+  color: var(--color-text-primary);
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.formWrapper {
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.logoContainer {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.logo {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footerText {
+  color: var(--color-text-secondary);
+  margin-bottom: 10px;
+  font-size: var(--font-size-base);
+}
+
+.link {
+  color: var(--color-primary);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: var(--transition-fast);
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.linkSmall {
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  transition: var(--transition-fast);
+}
+
+.linkSmall:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}

@@ -1,0 +1,124 @@
+/* src/pages/RegistroAvance/RegistroAvance.module.css */
+
+.container {
+  background: var(--gradient-background);
+  min-height: 100vh;
+  color: var(--color-text-primary);
+}
+
+.content {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 600px;
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+.title {
+  font-size: var(--font-size-3xl);
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.listContainer {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 2rem;
+  min-height: 150px;
+}
+
+.emptyMessage {
+  color: var(--color-text-disabled);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: var(--color-background-medium);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-primary);
+}
+
+.itemText {
+  font-size: var(--font-size-base);
+}
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #FF4444;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+}
+
+.deleteButton:hover {
+  transform: scale(1.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.select {
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.select:focus {
+  box-shadow: 0 0 0 2px rgba(54, 142, 240, 0.3);
+}
+
+.inputRow {
+  display: flex;
+  gap: 15px;
+}
+
+.inputGroup {
+  flex: 1;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+}
+
+.buttonContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

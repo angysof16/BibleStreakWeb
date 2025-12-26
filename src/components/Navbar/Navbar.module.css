@@ -1,0 +1,53 @@
+/* src/components/Navbar/Navbar.module.css */
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-surface);
+  border-top: var(--border-secondary);
+  padding: 0.75rem 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-navbar);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  transition: var(--transition-normal);
+  color: var(--color-text-tertiary);
+}
+
+.navButton:hover {
+  color: var(--color-text-secondary);
+}
+
+.navButton.active {
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.label {
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+}
+
+.navButton.active .label {
+  font-weight: 600;
+}
