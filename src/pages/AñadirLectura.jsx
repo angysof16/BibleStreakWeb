@@ -1,7 +1,7 @@
 // src/pages/AñadirLectura.jsx
 import { useState } from 'react';
 import Button from '../components/Button';
-import Navbar from '../components/Navbar';
+import Navbar from "../components/NavBar";
 
 const AñadirLectura = () => {
   const [formData, setFormData] = useState({

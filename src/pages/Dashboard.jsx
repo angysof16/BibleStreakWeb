@@ -1,7 +1,7 @@
 // src/pages/Dashboard.jsx
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavBar";
 import logo from "../assets/blanco.png";
 
 const Dashboard = () => {

@@ -1,7 +1,7 @@
 // src/pages/Perfil.jsx
 import { useNavigate } from 'react-router-dom';
 import { ChevronRight, User as UserIcon } from 'lucide-react';
-import Navbar from '../components/Navbar';
+import Navbar from "../components/NavBar";
 
 const Perfil = () => {
   const navigate = useNavigate();
